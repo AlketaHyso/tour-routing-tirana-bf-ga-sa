@@ -13,11 +13,12 @@ tour-routing-tirana-bf-ga-sa/
 ├─ requirements.txt
 ├─ .gitignore
 └─ code/
-   ├─ one_cell_evaluation.py        # single executable file
-   ├─ L1.json                       # N=7 points
-   ├─ L2.json                       # N=10 points
-   ├─ L3.json                       # N=32 points
-   └─ reports/                      # generated outputs (CSV, PNG)
+   ├─ itinerary_benchmark.ipynb   # notebook-i i vetëm ekzekutues
+   ├─ L1.json                     # N=7 pika
+   ├─ L2.json                     # N=10 pika
+   ├─ L3.json                     # N=32 pika
+   └─ reports/                    # gjenerohet/mbushet gjatë ekzekutimit (CSV/PNG)
+
 ```
 
 ## How to run
@@ -25,10 +26,9 @@ tour-routing-tirana-bf-ga-sa/
 python -m venv .venv
 . .venv/Scripts/activate   # Windows PowerShell: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+jupyter lab
+# hap code/itinerary_benchmark.ipynb dhe "Run All"
 
-cd code
-python one_cell_evaluation.py
-# or open in JupyterLab and run the single cell
 ```
 
 ### Inputs
